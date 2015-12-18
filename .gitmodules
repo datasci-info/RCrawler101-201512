@@ -1,0 +1,6 @@
+[submodule "week3"]
+	path = week3
+	url = https://github.com/everdark/rcrawler_101.git
+[submodule "week2"]
+	path = week2
+	url = https://github.com/mansunkuo/RCrawler101-201512-2.git
