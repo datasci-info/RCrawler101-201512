@@ -1,0 +1,31 @@
+---
+title:  "<font color=#005CE6> DemoCrawler </font>"
+subtitle: <font color="green">Week 1</font>
+author: 
+    name: "Chih-Ping Chao"
+    affiliation: <font color=#22dbea>木刻思股份有限公司</font>
+    email: "course@agilearning.io, george@data-sci.info"
+    website: "http://agilearning.io, https://github.com/whizzalan"
+date: "December 26, 2015"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=TRUE)
+options(width=120)
+library(ggplot2)
+library(plotly)
+library(dplyr)
+# rmarkdown::render("index.Rmd")
+```
+
+
+```{r YahooStock}
+#download.file("")
+source("YahooStock.r")
+dat <- yahooStockMajor.getData(2330)
+# View(dat)
+```
+
+
+<iframe width=750 height=500 frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~whizzalan/8.embed"> </iframe>

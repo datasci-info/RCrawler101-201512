@@ -1,0 +1,12 @@
+base
+ggplot2
+plotly
+gapminder
+dplyr
+DBI
+RSQLite
+gtable
+shiny
+httr
+xml2
+rvest
