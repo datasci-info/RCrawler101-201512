@@ -19,13 +19,33 @@ library(dplyr)
 # rmarkdown::render("index.Rmd")
 ```
 
+## YahooStock Demo
 
 ```{r YahooStock}
-#download.file("")
+if(!file.exists("YahooStock.r")){
+  download.file("https://raw.githubusercontent.com/datasci-info/RCrawler101-201512/gh-pages/week1/YahooStock.r", destfile = "YahooStock.r")
+}
 source("YahooStock.r")
 dat <- yahooStockMajor.getData(2330)
 # View(dat)
 ```
+
+## TWSE Demo
+
+- `encodeURIComponent=1&step=2&firstin=1&TYPEK=otc&code=`
+- `encodeURIComponent=1&step=1&firstin=1&TYPEK=rotc&code=02`
+- `encodeURIComponent=1&step=2&firstin=1&TYPEK=rotc&code=02`
+- `encodeURIComponent=1&step=1&firstin=1&TYPEK=otc&code=02`
+
+```{r TWSE}
+if(!file.exists("TWSE.r")){
+  download.file("https://github.com/datasci-info/RCrawler101-201512/blob/gh-pages/week1/TWSE.r", destfile = "TWSE.r")
+}
+source("TWSE.r")
+dat <- TWSE.postData()
+# View(dat)
+```
+
 
 
 <iframe width=750 height=500 frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~whizzalan/8.embed"> </iframe>
